@@ -20,7 +20,7 @@ trait HasSchema
         $renderedComponents = [];
 
         /** @var BladeSchema $child */
-        foreach ($this->schema as $child){
+        foreach ($this->schema as $child) {
             $renderedComponents[] = $child->render()->render();
         }
 

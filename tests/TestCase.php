@@ -2,9 +2,9 @@
 
 namespace DanielSpravtsev\BladeSchema\Tests;
 
+use DanielSpravtsev\BladeSchema\BladeSchemaServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use DanielSpravtsev\BladeSchema\BladeSchemaServiceProvider;
 
 class TestCase extends Orchestra
 {
