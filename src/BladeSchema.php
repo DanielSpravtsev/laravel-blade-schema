@@ -19,9 +19,9 @@ class BladeSchema extends Component
         $this->name = $name;
     }
 
-    public static function make(string $name): static
+    public static function make(string $name): self
     {
-        return new static($name);
+        return new self($name);
     }
 
     public function slot(string $slot): self
@@ -31,7 +31,7 @@ class BladeSchema extends Component
         return $this;
     }
 
-    public function render()
+    public function render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|bool|\Illuminate\Contracts\Support\Htmlable|string|\Closure|\Illuminate\Contracts\Foundation\Application
     {
         if (! $this->view) {
             return false;
