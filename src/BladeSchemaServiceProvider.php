@@ -2,9 +2,9 @@
 
 namespace DanielSpravtsev\BladeSchema;
 
+use DanielSpravtsev\BladeSchema\Commands\BladeSchemaCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DanielSpravtsev\BladeSchema\Commands\BladeSchemaCommand;
 
 class BladeSchemaServiceProvider extends PackageServiceProvider
 {

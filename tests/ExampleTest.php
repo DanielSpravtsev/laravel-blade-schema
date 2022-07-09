@@ -19,7 +19,7 @@ it('can render schema component', function () {
     expect(
         Form::make('Form component')->schema(
             [
-                Button::make('Simple Button')->slot('Button Inside Form')
+                Button::make('Simple Button')->slot('Button Inside Form'),
             ]
         )->schema[0]->name
     )->toBe('Simple Button');
